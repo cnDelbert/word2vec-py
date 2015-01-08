@@ -143,14 +143,14 @@ class WordVectors(object):
         -------
         WordVectors instance
         """
-        with open(fname) as fin:
+        with open(fname, "rb") as fin:
             header = fin.readline()
             vocab_size, vector_size = map(int, header.split())
 
             vocab = np.empty(vocab_size, dtype='<U%s' % vocabUnicodeSize)
             vectors = np.empty((vocab_size, vector_size), dtype=np.float)
             binary_len = np.dtype(np.float32).itemsize * vector_size
-            for i in xrange(vocab_size):
+            for i in range(vocab_size):
                 # read word
                 word = ''
                 while True:
