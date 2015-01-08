@@ -5,9 +5,11 @@ Python interface to Google word2vec.
 
 Training is done using the original C code plus some patches, the other funcionality is pure python + numpy.
 
+I'll try to satisfy both Python 2.7 and Python 3.x.
+
 ## Installation
 
-`pip install word2vec`
+You can clone or download this repo from Github and copy the `word2vec` folder to you `site-packages` directory.
 
 I highly recommend the use the [Anaconda python distribution](http://continuum.io/downloads)
 
@@ -22,6 +24,10 @@ The default functionality from word2vec is also available from the command line 
 - w2v-distance
 - w2v-word-analogy
 - w2v-compute-accuracy
+
+## Requirement
+
+> numpy>=1.7.1
 
 ## Issues
 
